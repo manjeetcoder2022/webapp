@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">  </script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+<title>APNA CHAT</title>
+
+   <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+       
+        <div class="container">
+            <button onclick="logout()" class="btn btn-danger glyphicon glyphicon-log-out logout">  Logout</button>
+            <center>
+
+            <img src="logo.png" id="logo" width="80" height="80">
+        </center>
+            <center>
+            <div id="Recantly" class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <h3 class="text_1" >Recantly Used rooms_name</h3>
+                <div id="output">
+                    
+                   
+
+
+                    </div>
+                
+           
+              </div>
+            </center>
+            <center>
+   <div id="login_box"class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+     <h3 class="text_1">Login</h3>
+     <span> Name: </span> <input id="user_name" placeholder="Enter your name">
+    <br> <br> <span id="sub"> Subject Name: </span> <input id="subject_name" placeholder="Enter Subject name">
+ <br> <br>   <span> Room Name: </span> <input id="room_name" placeholder="#roomNAME ">
+<br> <br> <button id="login" onclick="login()" class="btn btn-info">Login</button>
+<br> <br>
+    <a  onclick="send()" id="share" class="btn btn-success" href="" 
+    target="_blank"> Share to Student Email Group  </a> 
+
+
+   </div>
+</center>
+   
+</div>
+<script src="app.js"></script>
+    </body>
+
+</html>
